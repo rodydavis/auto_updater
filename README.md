@@ -2,6 +2,9 @@
 
 An auto updating example built for Flutter Desktop that uses Sparkle.
 
+![image](/doc/screenshots/7.png)
+![image](/doc/screenshots/8.png)
+
 ### MacOS
 
 - Source: https://github.com/sparkle-project/Sparkle
