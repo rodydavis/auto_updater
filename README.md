@@ -10,11 +10,6 @@ An auto updating example built for Flutter Desktop that uses Sparkle.
 - Source: https://github.com/sparkle-project/Sparkle
 - Info: https://sparkle-project.org
 
-### Windows
-
-- Source: https://github.com/vslavik/winsparkle
-- Info: https://winsparkle.org
-
 ## Getting Started
 
 You can easily just download the project and replace the feed url if you wish! Or fork the project template.
