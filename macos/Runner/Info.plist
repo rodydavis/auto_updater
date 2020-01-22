@@ -29,7 +29,7 @@
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
 	<key>SUFeedURL</key>
-	<string>https://cdn.2dimensions.com/sparkle/sparkletestcast.xml</string>
+	<string>https://sparkle-project.org/files/sparkletestcast.xml</string>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 </dict>

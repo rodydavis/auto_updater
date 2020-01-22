@@ -7,7 +7,7 @@ class MainFlutterWindow: NSWindow {
 
     @IBAction func checkForUpdates(_ sender: Any) {
         let updater = SUUpdater.shared()
-        updater?.feedURL = URL(string: "https://cdn.2dimensions.com/sparkle/sparkletestcast.xml")
+        updater?.feedURL = URL(string: "https://sparkle-project.org/files/sparkletestcast.xml")
         updater?.checkForUpdates(self)
     }
 
