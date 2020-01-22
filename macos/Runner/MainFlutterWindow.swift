@@ -1,15 +1,24 @@
 import Cocoa
 import FlutterMacOS
 
+import Sparkle
+
 class MainFlutterWindow: NSWindow {
-  override func awakeFromNib() {
-    let flutterViewController = FlutterViewController.init()
-    let windowFrame = self.frame
-    self.contentViewController = flutterViewController
-    self.setFrame(windowFrame, display: true)
 
-    RegisterGeneratedPlugins(registry: flutterViewController)
+    @IBAction func checkForUpdates(_ sender: Any) {
+        let updater = SUUpdater.shared()
+        updater?.feedURL = URL(string: "https://cdn.2dimensions.com/sparkle/sparkletestcast.xml")
+        updater?.checkForUpdates(self)
+    }
 
-    super.awakeFromNib()
-  }
+    override func awakeFromNib() {
+        let flutterViewController = FlutterViewController.init()
+        let windowFrame = self.frame
+        self.contentViewController = flutterViewController
+        self.setFrame(windowFrame, display: true)
+
+        RegisterGeneratedPlugins(registry: flutterViewController)
+
+        super.awakeFromNib()
+    }
 }
