@@ -9,10 +9,6 @@ project 'Runner', {
   'Release' => :release,
 }
 
-def import_pods
-    pod 'Sparkle'
-end
-
 def parse_KV_file(file, separator='=')
   file_abs_path = File.expand_path(file)
   if !File.exists? file_abs_path
@@ -49,7 +45,9 @@ end
 target 'Runner' do
   use_frameworks!
   use_modular_headers!
-  import_pods
+  
+  # Extra Pods
+  pod 'Sparkle'
 
   # Prepare symlinks folder. We use symlinks to avoid having Podfile.lock
   # referring to absolute paths on developers' machines.
